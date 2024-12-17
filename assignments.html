@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.49/build/spline-viewer.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - Eric Hatter</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #04cdf1;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: #a9f103;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f401af;
+            color: #fff;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav ul li {
+            font-weight: bold;
+        }
+        nav ul li a {
+            color: #fff;
+        }
+
+        /* Assignments */
+        section {
+            padding: 2rem 0;
+        }
+        section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .assignments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .assignment-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .assignment-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .assignment-card p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eric Hatter's Assignments</h1>
+        <p>Showcasing my Ican projects</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="assignments">
+            <h2>Assignments</h2>
+            <div class="assignments">
+                <div class="assignment-card">
+                    <h3>Project 1: Inventor assembly</h3>
+                    <p>A project showing my skill in 3D modeling.</p>
+                    
+                    <!-- Spline Viewer -->
+                    <spline-viewer 
+                        url="https://prod.spline.design/OcCzOGVZDs-xWGPy/scene.splinecode" 
+                        style="width: 100%; height: 400px; display: block;">
+                    </spline-viewer>
+                    
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                               
+                <div class="assignment-card">
+                    <h3>Project 2: Making songs</h3>
+                    <p>A project showing my skills in the music district.</p>
+                    
+                    <!-- First Song -->
+                    <audio controls>
+                        <source src="rb.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Song 1: RB.mp3</p>
+                    
+                    <!-- Second Song -->
+                    <audio controls>
+                        <source src="techno.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Song 2: Techno.mp3</p>
+                    
+                    <a href="#" target="_blank">View Project</a>
+                </div>                        
+                <div class="assignment-card">
+                    <h3>Project 3: A Photoshop assignment</h3>
+                    <p>A project showing my Photoshop abilities.</p>
+                    
+                    <!-- Embed PDF -->
+                    <embed src="jesus.pdf" type="application/pdf" width="100%" height="500px">
+                    
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eric Hatter. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
